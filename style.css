@@ -1,0 +1,253 @@
+/* Style Général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-image: url("./images/fond-form.jpg");
+  width: 100%;
+}
+
+/* style du formulaire */
+
+form {
+  background-color: #696565;
+  width: 60%;
+  border-radius: 15px;
+  border: 5px solid #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutYou,
+#contactInformation {
+  line-height: 40px;
+}
+
+#aboutYou label,
+#contactInformation,
+#additionalInformation {
+  font-size: 1.3em;
+  padding-left: 25px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+  height: 1.5em;
+}
+
+select {
+  height: 2em;
+}
+
+.formSubtitle {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.separateur {
+  background-color: #ffffff;
+  width: 50%;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style du titre */
+
+.formTitle {
+  width: 14%;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin: 30px auto 50px auto;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #ffffff;
+}
+
+/* Style de la partie "aboutYou" */
+
+#civility1,
+#civility2,
+#civility3 {
+  position: absolute;
+  top: 236px;
+}
+
+#labelCivility,
+#labelCivility2,
+#labelCivility3 {
+  padding-right: 7px;
+}
+
+.labCiv {
+  margin-left: 30px;
+}
+
+#firstName {
+  position: absolute;
+  top: 43%;
+  left: 43%;
+}
+
+#name {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+}
+
+#age {
+  position: absolute;
+  top: 57%;
+  left: 43%;
+}
+
+.labGenre {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-left: 25px;
+}
+
+#select1,
+#select2 {
+  position: absolute;
+  top: 71%;
+}
+
+.genre {
+  margin-left: 5%;
+}
+
+.btnGenre {
+  margin-left: 1%;
+}
+
+/* Style de la partie "contactInformation" */
+
+#email {
+  position: absolute;
+  top: 97%;
+  left: 43%;
+}
+
+#mailingAdress {
+  position: absolute;
+  top: 104%;
+  left: 43%;
+}
+
+#postalCode {
+  position: absolute;
+  top: 110%;
+  left: 43%;
+}
+
+#city {
+  position: absolute;
+  top: 116%;
+  left: 43%;
+}
+
+/* Style de la partie "additionnalInformation" */
+
+#additionalInformation {
+  line-height: 50px;
+  margin-bottom: 35px;
+}
+
+#jobsSelect {
+  position: absolute;
+  top: 144%;
+  left: 43%;
+}
+
+.countryConfig {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  padding: 25px;
+  border: 1px Solid #ffffff;
+  border-radius: 5px;
+}
+
+#other {
+  width: 12%;
+  position: absolute;
+  top: 211%;
+  left: 37%;
+}
+
+#dateOfBirth {
+  position: absolute;
+  top: 227%;
+  left: 48%;
+}
+
+#country {
+  position: absolute;
+  top: 235%;
+  left: 48%;
+}
+
+#socialSecurityNumber {
+  position: absolute;
+  top: 243%;
+  left: 48%;
+}
+
+#passport {
+  position: absolute;
+  top: 251%;
+  left: 48%;
+}
+
+#deliverance {
+  position: absolute;
+  top: 259%;
+  left: 48%;
+}
+
+#validity {
+  position: absolute;
+  top: 267%;
+  left: 48%;
+}
+
+/* Style du bouton "Envoyer" */
+
+.btnSubmit {
+  width: 22%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+input[type="submit"] {
+  width: 160px;
+  height: 35px;
+  border-radius: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #ffffff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

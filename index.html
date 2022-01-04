@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire HTML</title>
+  </head>
+  <body>
+    <h1 class="formTitle">Inscription</h1>
+    <form action="" method="">
+      <!-- Civilité -->
+      <div id="aboutYou">
+        <h2 class="formSubtitle">Votre civilité</h2>
+        <div>
+          <label for="civility1" id="labelCivility">Mr </label>
+          <input type="radio" id="civility1" name="civility" value="Mr" />
+          <label for="civility2" id="labelCivility2" class="labCiv">Mme</label>
+          <input type="radio" id="civility2" name="civility" value="Mme" />
+          <label for="civility3" id="labelCivility3" class="labCiv">Mlle</label>
+          <input type="radio" id="civility3" name="civility" value="Mlle" />
+        </div>
+        <div>
+          <label for="firstName">Votre prénom : </label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+
+        <div>
+          <label for="name">Votre nom : </label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="age">Votre Âge : </label>
+          <input type="number" name="age" id="age" min="1" max="99" />
+        </div>
+        <div class="labGenre">Sélectionner votre genre :</div>
+        <div>
+          <label for="select1">Homme</label>
+          <input
+            type="radio"
+            id="select1"
+            class="btnGenre"
+            name="sexe"
+            value="Homme"
+          />
+          <label for="select2" class="genre">Femme</label>
+          <input
+            type="radio"
+            id="select2"
+            class="btnGenre"
+            name="sexe"
+            value="Femme"
+          />
+        </div>
+      </div>
+      <div class="separateur"></div>
+      <!-- Fin civilité -->
+      <!-- Vos coordonnées -->
+      <div id="contactInformation">
+        <h2 class="formSubtitle">Vos coordonnées</h2>
+        <div>
+          <label for="email">Votre email : </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nom.prenom@mail.com"
+          />
+        </div>
+        <div>
+          <label for="mailingAdress">Votre adresse :</label>
+          <input type="text" id="mailingAdress" />
+        </div>
+        <div>
+          <label for="postalCode">Code postal : </label>
+          <input type="text" id="postalCode" name="postalCode" maxlength="5" />
+        </div>
+        <div>
+          <label for="city">Ville : </label>
+          <input type="text" id="city" name="city" />
+        </div>
+      </div>
+      <div class="separateur"></div>
+      <!-- Fin vos Coordonnées -->
+      <!-- Informations complémentaires -->
+      <div id="additionalInformation">
+        <h2 class="formSubtitle">Informations complémentaires</h2>
+        <div>
+          <label for="jobsSelect">Votre métier :</label>
+          <select name="Jobs" id="jobsSelect">
+            <option value="">--Votre choix--</option>
+            <option value="Developpeur Front-End">Developpeur Front-End</option>
+            <option value="Developpeur Back-End">Developpeur Back-End</option>
+            <option value="Developpeur Full Stack">
+              Developpeur Full Stack
+            </option>
+            <option value="UX Designer">UX Designer</option>
+          </select>
+        </div>
+
+        <p>Votre nationalité :</p>
+        <div class="countryConfig">
+          <label for="choise1">Française</label>
+          <input
+            type="radio"
+            id="choise1"
+            name="nationality"
+            value="Française"
+            checked
+          />
+          <label for="choise2">Allemande</label>
+          <input
+            type="radio"
+            id="choise2"
+            name="nationality"
+            value="Allemande"
+          />
+          <label for="choise3">Italienne</label>
+          <input
+            type="radio"
+            id="choise3"
+            name="nationality"
+            value="Italienne"
+          />
+          <label for="choise4">Espagnole</label>
+          <input
+            type="radio"
+            id="choise4"
+            name="nationality"
+            value="Espagnole"
+          />
+          <label for="choise5">Autres préciser : </label>
+          <input type="radio" id="choise5" name="nationality" />
+          <input type="text" id="other" name="otherNationality" />
+        </div>
+
+        <div>
+          <label for="dateOfBirth">Votre date de naissance : </label>
+          <input
+            type="date"
+            id="dateOfBirth"
+            name="dateOfBirth"
+            value="1970-01-01"
+          />
+        </div>
+        <div>
+          <label for="country">Pays de naissance :</label>
+          <input type="text" id="country" name="country" />
+        </div>
+        <div>
+          <label for="socialSecurityNumber"
+            >Votre N° de Sécurité sociale :
+          </label>
+          <input
+            type="text"
+            id="socialSecurityNumber"
+            name="socialSecurityNumber"
+            maxlength="13"
+          />
+        </div>
+        <div>
+          <label for="passport">N° de Passport : </label>
+          <input type="text" id="passport" name="passport" maxlength="9" />
+        </div>
+        <div>
+          <label for="deliverance"
+            >Date de délivrance de votre passeport:
+          </label>
+          <input
+            type="date"
+            id="deliverance"
+            name="deliverance"
+            value="1970-01-01"
+          />
+        </div>
+        <div>
+          <label for="validity">Date de validité de votre passeport: </label>
+          <input type="date" id="validity" name="validity" value="1970-01-01" />
+        </div>
+      </div>
+      <div class="separateur"></div>
+      <!-- Fin informations complémentaires -->
+      <!-- Bouton Envoyer -->
+      <div class="btnSubmit">
+        <input type="submit" value="Envoyer" onclick="getValue();" />
+      </div>
+      <!-- Fin bouton envoyer -->
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
